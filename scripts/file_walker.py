@@ -6,4 +6,7 @@ def walk(root, ext):
         for name in filenames:
             if name.endswith(ext):
                 hits.append(os.path.join(dirpath, name))
-    return hits
+    return sorted(hits)
+
+def count(root, ext):
+    return len(walk(root, ext))
