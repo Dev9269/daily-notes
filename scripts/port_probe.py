@@ -10,3 +10,6 @@ def probe(host, port, timeout=1.0):
         return False
     finally:
         s.close()
+
+def scan(host, ports, timeout=1.0):
+    return {p: probe(host, p, timeout) for p in ports}
