@@ -1,2 +1,7 @@
 # daily-notes
-Daily notes, scripts and learnings
+
+Personal daily engineering notes, scripts and journal.
+
+- Notes: `notes/`
+- Scripts: `scripts/`
+- Journal: `journal/`
