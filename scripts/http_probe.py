@@ -6,3 +6,10 @@ def probe(url, timeout=5):
             return r.status, dict(r.headers)
     except urllib.error.HTTPError as e:
         return e.code, dict(e.headers)
+
+def check_dir(url, names):
+    out = {}
+    for n in names:
+        status, _ = probe(url.rstrip('/') + '/' + n)
+        out[n] = status
+    return out
