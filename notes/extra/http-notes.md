@@ -1,4 +1,5 @@
 # HTTP notes
 
-- Status codes 401/403/429 semantics
-- Rate limit headers: Retry-After, X-RateLimit-Remaining
+- Idempotency of GET/HEAD
+- 304 Not Modified caching
+- Retry-After semantics
