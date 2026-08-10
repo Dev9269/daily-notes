@@ -1,6 +1,7 @@
-all: notes
+lint:
+	python -m compileall scripts
 
-notes:
-	@echo building daily notes index
+test:
+	python -m pytest --tb=short
 
-.PHONY: all notes
+.PHONY: lint test
