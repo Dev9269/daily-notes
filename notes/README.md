@@ -1,3 +1,3 @@
-# Daily Notes
+# notes
 
-Personal engineering notes. 6 entries so far.
+Engineering notes covering auth, networking, devops, ML and more.
