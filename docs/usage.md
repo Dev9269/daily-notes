@@ -1,3 +1,3 @@
 # Usage
 
-See scripts/ for utilities; each has a __main__ demo or doctest.
+Run any script with python3; each module is import-safe and has a small demo in its docstring.
