@@ -9,3 +9,6 @@ def checksum(path, algo='sha256', chunk=1 << 20):
                 break
             h.update(b)
     return h.hexdigest()
+
+def verify(path, expected, algo='sha256'):
+    return checksum(path, algo) == expected.lower()
